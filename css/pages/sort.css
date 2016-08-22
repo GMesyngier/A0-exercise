@@ -1,0 +1,134 @@
+body {
+  background: $background-color;
+  font: normal 200 18px/1.5em 'AvenirLt', sans-serif;
+  color: #fff;
+}
+h2,
+.h2 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+.logo {
+  display: inline-block;
+  margin: 0 0 5px;
+}
+@media tablet {
+  .logo {
+    margin: 0 0 10px;
+  }
+}
+.logo img {
+  width: 22px;
+  height: auto;
+}
+@media tablet {
+  .logo img {
+    width: 26px;
+    height: auto;
+  }
+}
+.employees-list {
+  color: #000;
+}
+.employees-list .employee {
+  overflow: hidden;
+  height: 234px;
+  position: relative;
+  margin: 9px 0;
+  background: #fff;
+}
+@media tablet {
+  .employees-list .employee {
+    margin: 11px 0;
+  }
+}
+@media tablet {
+  .employees-list .employee.john-doe .employee-bg {
+    background-position: center -95px;
+    background-size: initial;
+  }
+}
+@media tablet {
+  .employees-list .employee.sally-foo .employee-bg {
+    background-position: center -335px;
+    background-size: initial;
+  }
+}
+@media tablet {
+  .employees-list .employee.carlos-random .employee-bg {
+    background-position: center -335px;
+    background-size: initial;
+  }
+}
+.employees-list .employee-image {
+  width: 84px;
+  height: 84px;
+  z-index: 1;
+  background-position: center center;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  top: 75px;
+}
+@media tablet {
+  .employees-list .employee-image {
+    top: 50%;
+  }
+}
+.employees-list .employee-data {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  text-align: center;
+  z-index: 1;
+  text-rendering: geometricPrecision;
+}
+@media tablet {
+  .employees-list .employee-data {
+    position: absolute;
+    top: 36px;
+    left: 40px;
+    right: auto;
+    bottom: auto;
+    text-align: left;
+    z-index: 1;
+    width: 80%;
+  }
+}
+.employees-list .employee-data * {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.34em;
+  padding: 0 40px;
+}
+@media tablet {
+  .employees-list .employee-data * {
+    padding: 0;
+  }
+}
+.employees-list .employee-data--job {
+  opacity: 0.5;
+}
+.employees-list .employee-bg {
+  filter: blur(7px);
+  -moz-filter: blur(7px);
+  -webkit-filter: blur(7px);
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-position: center center;
+  background-size: cover;
+  transform: scale(1.1);
+}
+@media tablet {
+  .employees-list .employee-bg {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,44 @@
+horizontal-align()
+	position absolute
+	left 50%
+	-webkit-transform translateX(-50%)
+	-moz-transform translateX(-50%)
+	transform translateX(-50%)
+
+center-align()
+	position absolute
+	left 50% 
+	top  50% 
+	-webkit-transform translate(-50%,-50%)
+	-moz-transform translate(-50%,-50%)
+	transform translate(-50%,-50%)
+	
+animation()
+	-moz-animation arguments
+	-webkit-animation arguments
+	-o-animation arguments
+	animation arguments
+	
+transform() 
+	transform arguments
+	-webkit-transform arguments
+	-moz-transform arguments
+	
+vendor(prop, args)
+	-webkit-{prop} args
+	-moz-{prop} args
+	-ms-{prop} args
+	-o-{prop} args
+	{prop} args
+	
+transition()
+	vendor('transition', arguments)
+
+box-sizing()
+	vendor('box-sizing', arguments)
+
+border-radius()
+	vendor('border-radius', arguments)
+
+box-shadow()
+	vendor('box-shadow', arguments)

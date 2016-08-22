@@ -1,0 +1,18 @@
+b {
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+.page-wrapper {
+  width: 94%;
+  max-width: 928px;
+  margin: 24px auto;
+  position: relative;
+}
+@media tablet {
+  .page-wrapper {
+    margin: 32px auto;
+  }
+}

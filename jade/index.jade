@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+	head
+		title Auth0 Excersise in jade-Stylus
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/styles.css")
+
+	body
+
+		.page-wrapper
+
+			header
+				.logo
+					a(href="#") 
+						img(src="images/auth0-logo.svg", alt="Auth0")
+
+			section
+				.dropdown Order by 
+					.dropdown-current
+						b Position 
+						span.arrow
+					.dropdown-list-container
+						.arrow
+						ul.dropdown-list
+							li.dropdown-list-item Name
+							li.dropdown-list-item Location
+							li.dropdown-list-item Skill
+
+				ul.employees-list
+
+					li.employee.john-doe
+						.employee-image(style="background-image: url(images/user-avatar-01.png)")
+						.employee-data
+							h2.employee-data--name John Doe
+							p.employee-data--job Marketer
+						.employee-bg(style="background-image: url(images/user-bg-01.png)")
+
+					li.employee.sally-foo
+						.employee-image(style="background-image: url(images/user-avatar-02.png)")
+						.employee-data
+							h2.employee-data--name Sally Foo Longname
+							p.employee-data--job Engineer
+						.employee-bg(style="background-image: url(images/user-bg-02.png)")
+
+					li.employee.carlos-random
+						.employee-image(style="background-image: url(images/user-avatar-03.png)")
+						.employee-data
+							h2.employee-data--name Carlos Random
+							p.employee-data--job Devops
+						.employee-bg(style="background-image: url(images/user-bg-03.png)")

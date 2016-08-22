@@ -1,0 +1,112 @@
+.dropdown {
+  position: fixed;
+  background: #fff;
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  color: #000;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 20px;
+  text-rendering: geometricPrecision;
+}
+.dropdown:hover .dropdown-list-container {
+  opacity: 1;
+  pointer-events: initial;
+}
+@media tablet {
+  .dropdown {
+    position: absolute;
+    background: transparent;
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    color: #fff;
+    padding: 1px 0 25px;
+  }
+  .dropdown a {
+    color: #fff;
+  }
+}
+.dropdown .dropdown-current {
+  cursor: pointer;
+  display: inline;
+}
+.dropdown .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+  display: inline-block;
+}
+@media tablet {
+  .dropdown .arrow {
+    border-color: #fff transparent transparent transparent;
+  }
+}
+.dropdown .dropdown-list-container {
+  background: #fff;
+  opacity: 0;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 74px;
+  pointer-events: none;
+}
+@media tablet {
+  .dropdown .dropdown-list-container {
+    min-width: 180px;
+    top: 35px;
+    left: auto;
+    right: 0;
+    bottom: auto;
+  }
+}
+.dropdown .dropdown-list-container:hover {
+  opacity: 1;
+}
+.dropdown .dropdown-list-container:focus {
+  pointer-events: none;
+  opacity: 0;
+}
+.dropdown .dropdown-list-container .arrow {
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  right: auto;
+  display: none;
+}
+@media tablet {
+  .dropdown .dropdown-list-container .arrow {
+    top: -6px;
+    right: 35px;
+    display: block;
+  }
+}
+.dropdown .dropdown-list {
+  color: $color-text-regular;
+  max-height: 50vh;
+  height: auto;
+  overflow: scroll;
+  cursor: pointer;
+}
+.dropdown .dropdown-list .dropdown-list-item {
+  padding: 0 20px 10px;
+  font-size: 14px;
+  text-align: center;
+}
+@media tablet {
+  .dropdown .dropdown-list .dropdown-list-item {
+    text-align: left;
+  }
+}
+.dropdown .dropdown-list .dropdown-list-item:first-child {
+  padding-top: 10px;
+}
+.dropdown .dropdown-list .dropdown-list-item:hover {
+  color: $color-text-light;
+}

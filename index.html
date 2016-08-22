@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Auth0 Excersise in jade-Stylus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="logo"><a href="#"> <img src="images/auth0-logo.svg" alt="Auth0"></a></div>
+      </header>
+      <section>
+        <div class="dropdown">Order by 
+          <div class="dropdown-current"><b>Position </b><span class="arrow"></span></div>
+          <div class="dropdown-list-container">
+            <div class="arrow"></div>
+            <ul class="dropdown-list">
+              <li class="dropdown-list-item">Name</li>
+              <li class="dropdown-list-item">Location</li>
+              <li class="dropdown-list-item">Skill</li>
+            </ul>
+          </div>
+        </div>
+        <ul class="employees-list">
+          <li class="employee john-doe">
+            <div style="background-image: url(images/user-avatar-01.png)" class="employee-image"></div>
+            <div class="employee-data">
+              <h2 class="employee-data--name">John Doe</h2>
+              <p class="employee-data--job">Marketer</p>
+            </div>
+            <div style="background-image: url(images/user-bg-01.png)" class="employee-bg"></div>
+          </li>
+          <li class="employee sally-foo">
+            <div style="background-image: url(images/user-avatar-02.png)" class="employee-image"></div>
+            <div class="employee-data">
+              <h2 class="employee-data--name">Sally Foo Longname</h2>
+              <p class="employee-data--job">Engineer</p>
+            </div>
+            <div style="background-image: url(images/user-bg-02.png)" class="employee-bg"></div>
+          </li>
+          <li class="employee carlos-random">
+            <div style="background-image: url(images/user-avatar-03.png)" class="employee-image"></div>
+            <div class="employee-data">
+              <h2 class="employee-data--name">Carlos Random</h2>
+              <p class="employee-data--job">Devops</p>
+            </div>
+            <div style="background-image: url(images/user-bg-03.png)" class="employee-bg"></div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
