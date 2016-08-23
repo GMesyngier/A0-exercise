@@ -307,7 +307,7 @@ a {
 .page-wrapper {
   width: 94%;
   max-width: 928px;
-  margin: 24px auto;
+  margin: 24px auto 90px;
   position: relative; }
   @media (min-width: 768px) {
     .page-wrapper {
